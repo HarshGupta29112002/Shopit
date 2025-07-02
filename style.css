@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+main {
+  height: fit-content;
+  /* width: 100%; */
+  margin-top: 6vh;
+  background-color: rgb(216, 208, 197);
+
+}
+
+
+@media (max-width:576px) {
+  main {
+    margin-top: 9vh;
+  }
+
+  .carousel-item img {
+    height: 30vh;
+
+  }
+
+}
+
+@media (min-width:577px) {
+  .carousel-item img {
+    height: 50vh;
+  }
+
+}
+
+@media (min-width:993px) {
+  .carousel-item img{
+    height: 70vh;
+  }
+  
+}
+ .card{
+   background-color: rgb(235, 229, 222);
+ }
+ .blink {
+      animation: blinkText 1s infinite;
+    }
+
+    @keyframes blinkText {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+.card:hover{
+    box-shadow: 0 4px 10px 0 rgba(17, 17, 17, 0.2),
+     0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     /* height: 20vh;
+     width: 30vh */
+}    
+

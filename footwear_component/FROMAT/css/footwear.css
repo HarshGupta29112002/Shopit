@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+  height: fit-content;
+  /* width: 100%; */
+  margin-top:9.8vh;
+  background-color:rgb(255, 255, 255);
+  /* border: 2px solid crimson; */
+}
+
+/* ------------>>filter */
+.filter{
+  height: 50vh;
+  width: 80%;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;  
+  margin: auto;
+}
+.mens{
+  height: 100%;
+  width: 30%;
+  /* border: 2px solid black; */
+}
+.mens img{
+  height: 80%;
+  width: 80%;
+  border-radius: 40%;
+  margin: 2% 0 0 10%;
+
+}
+.mens h2{
+  font-size: 1.2rem;
+  padding-left: 30%;
+  padding-top: 5%;
+}
+.womens{
+  height: 100%;
+  width: 30%;
+  /* border: 2px solid black; */
+}
+.womens img{
+  height: 80%;
+  width: 80%;
+  border-radius: 40%;
+  margin: 2% 0 0 10%;
+}
+.womens h2{
+  font-size: 1.2rem;
+  padding-left: 28%;
+  padding-top: 5%;
+}
+.kids{
+  height: 100%;
+  width: 30%;
+  /* border: 2px solid black; */
+}
+.kids img{
+  height: 80%;
+  width: 80%;
+  border-radius: 40%;
+  margin: 2% 0 0 10%;
+}
+.kids h2{
+  font-size: 1.2rem;
+  padding-left: 35%;
+  padding-top: 5%;
+}
+/* ------------>>filter-ends */
+main img{
+  width: 80%;
+  margin: 0 0 0 9.5%;
+}
+
+/* ------------------------>>brands */
+.brands{
+  height: 80vh;
+  width: 80%;
+  /* border: 2px solid black; */
+  margin: auto;
+}
+.brands h1{
+  font-size: 1.7rem;
+  height: 10%;
+  width: 100%;
+  /* border: 1px dashed crimson; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top{
+  height: 90%;
+  width: 100%;
+  /* border: 1px solid palevioletred; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  align-items: center;
+  gap: 2%;
+}
+.shoe{
+  height: 40%;
+  width: 20%;
+  /* border: 1px solid brown; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shoe img{
+  height: 100%;
+  width: 100%;
+  /* object-fit: cover; */
+}
+
+
+/* ----------------->>>>brands-ended */
+
+body p{
+  margin-left: 1%;
+}
+
+
+
+
+
+
+
+/* ------------------ MEDIA QUERIES ------------------ */
+
+
+
+/* 👇 For devices larger than laptop(min-width: 1025px) */
+
+@media (min-width: 1025px) {
+  .brands {
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 32px 0;
+    background: #f8f8f8;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .brands h1 {
+    font-size: 2.2rem;
+    margin-bottom: 32px;
+    color: #222;
+    letter-spacing: 2px;
+  }
+  .top {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 32px;
+    padding: 0 32px;
+  }
+}
+
+/* 👇 For laptops and below (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .filter {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .mens, .womens, .kids {
+    width: 30%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mens h2, .womens h2, .kids h2 {
+    font-size: 1.2rem;
+    padding-left: 0;
+    text-align: center;
+  }
+  main img{
+    width: 100%;
+    margin: 0;
+    display: block;
+  }
+  .brands{
+    width: 100%;
+    /* height: auto; */
+  }
+  .brands h1{
+    font-size: 1.7rem;
+  }
+}
+
+/* 👇 For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .filter {
+    flex-direction: column;
+    height: auto;
+  }
+  .mens, .womens, .kids {
+    width: 80%;
+  }
+  main img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+  .brands {
+    height: auto;
+    width: 90%;
+  }
+  .top {
+    gap: 1%;
+  }
+  .shoe {
+    width: 40%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .shoe img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* 👇 For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .filter {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .mens, .womens, .kids {
+    width: 90%;
+  }
+  .mens img, .womens img, .kids img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .brands h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .top {
+    justify-content: center;
+    gap: 10px;
+  }
+  .shoe {
+    width: 45%;
+    height: auto;
+  }
+  .shoe img {
+    width: 100%;
+    height: auto;
+  }
+  body p {
+    font-size: 0.9rem;
+    margin: 10px;
+  }
+}
+.card:hover{
+    box-shadow: 0 4px 10px 0 rgba(17, 17, 17, 0.2),
+     0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     
+}    
